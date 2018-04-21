@@ -61,6 +61,23 @@ footer {
 	margin-top: 40px;
 }
 
+.student-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: flex-start;
+}
+
+.search-container {
+	display: flex;
+	content-align: center;
+}
+
+.card {
+	margin: 10px;
+}
 
 /* Login page */
 

@@ -3,8 +3,12 @@
 <head>
 	<title>DC Connect</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" ></script>
+	<script src="index.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+	
 </head>
 <body>
 
@@ -30,22 +34,42 @@
 	  			<img src="img/connect.svg" width="100">
 	  			<h1>DC Connect</h1>
 	  			<p>Easily connect with Digital Crafts students. Are you looking for a person with a particular skill set? Great! Begin your search and find your perfect developer.</p>
-	  			<a href="./login/index.html" class="btn btn-primary">Log in</a>
 	  			<!-- <button type="button" class="btn btn-primary" href="./login/index.html">Log in</button> -->
 	  		</div>
 	  	</div>
-  	</div>
-
+	  </div>
+		<div class="search-container">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2>Search Students</h2>
+						<div id="custom-search-input">
+							<div class="input-group col-md-12">
+								<input type="text" class="form-control input-lg" placeholder="Enter Student's Name" />
+								<span class="input-group-btn">
+									<button class="btn btn-primary btn-md" type="button">
+										<i class="glyphicon glyphicon-search">Search</i>
+									</button>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<div class="student-container"></div>
 	<div class="container">
   		<div class="sub-container">
   			<img src="img/employer.svg" width="60">
-  			<h3>Employers</h3>
+  			<h3 id="employerTag">Employers</h3>
+			  <a href=./login/index.html class="btn btn-primary">Sign In</a>
   			<p>Log in and start your search. Just type in your required skillset and view all DC students who meet that criteria. View their profile and send them a message.</p>
   		</div>
   			
   		<div class="sub-container dummyClass">
   			<img src="img/student.svg" width="60">
-  			<h3>Students</h3>
+			  <h3 id="studentTag">Students</h3>
+			  <a href=./login/index.html class="btn btn-primary">Sign In</a>
   			<p>This is for you too! Update your bio, resume, social media and project page so that you can be found by awesome companies.</p>
   		</div>
   			
